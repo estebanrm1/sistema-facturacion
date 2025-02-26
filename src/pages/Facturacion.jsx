@@ -1,4 +1,3 @@
-import React, { useState } from 'react';
 import { useProductos } from '../hooks/useProductos'; // Asegúrate de importar useProductos
 import useFacturacion from '../hooks/useFacturacion';
 import FacturaProductos from '../components/facturacion/FacturaProductos';
