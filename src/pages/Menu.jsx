@@ -13,14 +13,14 @@ const Menu = ({usuarioLogueado, setUsuarioLogueado}) => {
     <>
     <Col lg={3} className="vh-100">
         <nav className="nav text-center flex-column position-fixed">
-          <Link className="nav-link" to="administrador/Informes">Informes</Link> 
             {
-          
+              
               (usuarioLogueado.usuario )?
               <>
               <Button variant='dark' onClick={cerrarSesion}>Cerrar sesión</Button>
               <Link className="nav-link" to="administrador/Facturacion">Facturación</Link>
               <Link className="nav-link" to="administrador/Productos">Administrador</Link>
+              <Link className="nav-link" to="administrador/Informes">Informes</Link>
               </>:<Link className="nav-link" to="/">Abrir sesión</Link>
             }
         </nav>

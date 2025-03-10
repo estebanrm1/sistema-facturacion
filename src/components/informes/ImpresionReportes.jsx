@@ -21,7 +21,7 @@ const ImpresionReportes = () => {
 
     return (
         <div>
-            <h2>Generación de Reportes</h2>
+            <h2>Ventas Por Productos</h2>
             <div className="mb-3">
                 <label className="form-label">Producto:</label>
                 <input

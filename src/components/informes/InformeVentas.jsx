@@ -13,7 +13,7 @@ const InformeVentas = () => {
 
     return (
     <div>
-        <h2>Informe de Ventas</h2>
+        <h2>Ventas por Fecha</h2>
             <label>
                 Fecha de inicio:
                 <input

@@ -1,15 +1,15 @@
-import { useState } from 'react';
+import { useState,useEffect } from 'react';
 
 const GestionGastos = () => {
     const [gastos, setGastos] = useState([]);
     const [nuevoGasto, setNuevoGasto] = useState({ descripcion: '', monto: 0 });
 
-    // useEffect(() => {
+    useEffect(() => {
         
-    //     fetch('/api/gastos')
-    //         .then((response) => response.json())
-    //         .then((data) => setGastos(data));
-    // }, []);
+        fetch('/api/gastos')
+            .then((response) => response.json())
+            .then((data) => setGastos(data));
+    }, []);
 
     const agregarGasto = () => {
         fetch('/api/gastos', {
